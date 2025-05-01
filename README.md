@@ -1,6 +1,4 @@
-
-
-#### 安装
+## 安装
 
 ```bash
 git clone https://github.com/mathinml/mcp_merge_video.git
@@ -8,7 +6,7 @@ cd mcp_merge_video
 pip install mcp
 pip install .
 ```
-#### 配置信息
+## 配置信息
 
 stdio模式：
 
