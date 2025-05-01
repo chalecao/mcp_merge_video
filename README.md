@@ -3,24 +3,41 @@
 #### 安装
 
 ```bash
-git clone https://github.com/mathinml/mcp_money_track.git
-cd mcp_money_track
+git clone https://github.com/mathinml/mcp_merge_video.git
+cd mcp_merge_video
 pip install mcp
 pip install .
 ```
 #### 配置信息
 
+stdio模式：
+
 ```bash
 {
   "mcpServers": {
-    "money-track-mcp": {
+    "merge-video-mcp": {
       "command": "path-to-your-python",
       "args": [
         "-m",
-        "mcp_money_track"
+        "mcp_merge_video"
       ],
       "env": {
-        "ACCOUNTING_WORKING_DIR": "/Users/xyz/account"
+        "MERGE_VIDEO_WORKING_DIR": "/Users/xyz/account"
+      }
+    }
+  }
+} 
+```
+
+sse模式：
+
+```bash
+{
+  "mcpServers": {
+    "merge-video-mcp": {
+      "url": "http://127.0.0.1:9000/sse",
+      "env": {
+        "MERGE_VIDEO_WORKING_DIR": "/Users/xyz/account"
       }
     }
   }

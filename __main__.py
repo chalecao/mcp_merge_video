@@ -1,5 +1,5 @@
 """
-记账 MCP 服务入口点
+合成视频服务入口点
 """
 from .src.server import run_server
 
